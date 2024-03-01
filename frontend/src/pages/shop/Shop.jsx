@@ -17,7 +17,7 @@ const Shop = () => {
       try {
         const response = await axios.get(
           // `https://foodapp-xyfd.vercel.app/api/dishes`
-          `http://localhost:3001/api/dishes`
+          `https://foodapp-xyfd.vercel.app/api/dishes`
         );
         console.log(response.data);
         setProduct(response.data);

@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/user/register`,
+        `https://foodapp-xyfd.vercel.app/api/user/register`,
         currentUser
       );
       const { user, token } = response.data;
